@@ -258,6 +258,12 @@ nav li {
 .single-album p {
     font-size: 2.25vw;
 }
+#ecSingles {
+    margin-bottom: 40px;
+}
+#ecSingles h3 {
+    font-size: 3.5vw;
+}
 
 /* Album Tracklist */
 .album-tracklist-container {

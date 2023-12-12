@@ -24,11 +24,11 @@ window.addEventListener("load", function() {
         let ecComplete = "64cm5ga4GwvGhr58g28EBu"; // discography playlist id
         getPlaylist(token, ecComplete, "discography");
 
-        let WhiteSilas = "6mfp82sjNINulIHbKg4pMf"; // White Silas playlist id
-        getPlaylist(token, WhiteSilas, "white-silas");
+        // let WhiteSilas = "6mfp82sjNINulIHbKg4pMf"; // White Silas playlist id
+        // getPlaylist(token, WhiteSilas, "white-silas");
 
-        let unreleased = "3dsAWRiXhh7jfhqBrwxKpJ"; // unreleased playlist id
-        getPlaylist(token, unreleased, "unreleased");
+        // let unreleased = "3dsAWRiXhh7jfhqBrwxKpJ"; // unreleased playlist id
+        // getPlaylist(token, unreleased, "unreleased");
     });
 });
 
