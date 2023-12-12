@@ -1,0 +1,696 @@
+/* CSS Style Reset */
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+        Styles for All Sizes
+----------------------------------------------------------------------------------------------------
+*/   
+body {
+    color: white;
+    font-family: 'IM Fell English', serif;
+    background-color:rgb(36, 26, 16);
+}
+
+a {
+    color: rgb(0, 136, 255);
+}
+
+/* Nav */
+nav li a,
+nav li a:visited,
+nav li a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.website-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Albums */
+.albums {
+    display: grid;
+    justify-content: space-evenly;
+}
+.single-album-main {
+    background-color: black;
+    text-align: center;
+}
+.album-image {
+    max-width: 100%;
+}
+.album-date {
+    color: rgb(137, 136, 136);
+}
+
+/* Album Tracklist */
+.album-tracklist-container {
+    background-color: black;
+    text-align: left;
+}
+.album-tracklist {
+    border-radius: 7px;
+    background: rgb(53, 53, 53);
+    padding-left: 20px;
+}
+
+/* Page Backgrounds */
+.discography-page {
+    background-image: radial-gradient(rgb(11, 0, 220), rgb(7, 0, 142), rgb(0, 0, 0));
+}
+.photos-page {
+    background-color: rgb(0, 0, 0);
+}
+.tour-photos-page {
+    background-color: rgb(32, 32, 32);
+}
+
+
+/* ---------- Playlists ---------- */
+.playlist-container {
+    background: rgb(24, 24, 24);
+}
+.playlist-track {
+    background: rgb(41, 41, 41);
+    display: grid;
+
+    grid-template-columns: 70% 30%;
+}
+.playlist-track p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Playlist Left Side */
+.playlist-far-left-container {
+    display: grid;
+    margin-right: auto; 
+    width: 100%;
+}
+.playlist-text-container {
+    margin-right: auto; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.playlist-track-artists {
+    color: rgb(130, 130, 130);
+}
+
+/* Playlist Right Side */
+.playlist-far-right-container{
+    margin-left: auto;
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+}
+.playlist-track-duration {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.play-button {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.play-button-image {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+/* ^^^^^^^^^^ Playlists ^^^^^^^^^^ */
+
+
+/* Photo Grid */
+.photo-grid-card {
+    background:rgb(113, 113, 113);
+}
+.photo {
+    max-width: 100%;
+    display: block;
+}
+
+/* Tour Photos */
+.tour-photo {
+    border-color: white;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tour Videos */
+.tour-video-grid {
+    display: grid;
+    justify-content: space-evenly;
+}
+video {
+    max-width: 100%;
+}
+
+/* Home Page About Section */
+.first-about {
+    display: grid;
+}
+.second-about {
+    display: grid;
+}
+.about-image {
+    max-width: 100%;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+/* Playlist Generator Form */
+#playlist-form {
+    display: inline-block;
+    border-style: solid;
+    border-color: rgb(46, 46, 46);
+    background-color: rgb(0, 0, 0);
+}
+#submit-button {
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 255, 255);
+    font-family: 'IM Fell English', serif;
+}
+#error-container {
+    display: inline-block;
+    background-color: rgba(157, 52, 52, 0.609);
+    color: rgb(255, 217, 217);
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+        ^ Styles for All Sizes ^
+----------------------------------------------------------------------------------------------------
+*/        
+
+/*
+----------------------------------------------------------------------------------------------------
+        Mobile styling
+----------------------------------------------------------------------------------------------------
+*/        
+.desktop-tablet-only {
+    display: none;
+}
+.mobile-only {
+    display: inline-block;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+article p {
+    margin-left: 20px;
+}
+
+.website-image {
+    width: 60%;
+    padding: 10px;
+}
+
+/* Nav */
+nav {
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    font-size: 5vw;
+}
+nav li {
+    background-color: rgb(50, 50, 50);
+    margin-top: 4px;
+    padding: 10px;
+}
+
+/* Albums */
+.album-single-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.albums {
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 15px;
+}
+.single-album-main {
+    padding: 4px;
+    border-radius: 7px;
+}
+.album-image {
+    border-radius: 3%;
+}
+.single-album h3 {
+    font-size: 5vw;
+}
+.single-album p {
+    font-size: 2.25vw;
+}
+
+/* Album Tracklist */
+.album-tracklist-container {
+    font-size: 2.5vw;
+    padding-top: 3px;
+    padding: 4px;
+}
+.album-tracklist-container h3 {
+    font-size: 3vw;
+    margin-left: 5px;
+}
+
+/* Discography Page */
+.discography-page main {
+    margin: 15px;
+}
+
+
+/* ---------- Playlists ---------- */
+.playlist-container {
+    border-radius: 7px;
+    padding: 3px;
+
+    margin-top: 3px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+.playlist-track {
+    border-radius: 4px;
+    padding: 5px;
+    margin: 3px;
+}
+.playlist-track-name,
+.playlist-track-duration {
+    font-size: 14px;
+}
+
+/* Playlist Left Side */
+.playlist-far-left-container {
+    grid-template-columns: 50px 80%;
+}
+.playlist-track-image {
+    max-width: 45px;
+    border-radius: 5px;
+}
+.playlist-text-container {
+    margin-left: 5px;
+}
+.playlist-track-artists {
+    font-size: 10px;
+}
+
+/* Playlist Right Side */
+.playlist-track-duration {
+    margin-right: 30px;
+}
+.play-button {
+    margin-right: 10px;
+    width: 25px;
+}
+/* ^^^^^^^^^^ Playlists ^^^^^^^^^^ */
+
+
+/* Photo Grid */
+.photo-grid {
+    margin: 10px;
+
+    column-count: 3;
+    column-gap: 5px;
+}
+.photo-grid-card {
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+/* Tour Photos */
+.tour-photo {
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Tour Videos */
+.tour-video-grid {
+    margin-top: 30px;
+
+    grid-template-columns: 90%;
+    grid-row-gap: 20px;
+}
+video {
+    border-radius: 7px;
+}
+
+/* Home Page About Section */
+.first-about {
+    grid-template-columns: 90%;
+    justify-content: space-evenly;
+}
+.second-about {
+    grid-template-columns: 90%;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+.about-image {
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Playlist Generator Form */
+#playlist-form {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    border-radius: 7px;
+    border-width: 2px;
+
+    max-width: 100%;
+}
+#playlist-form label {
+    font-size: 12px;
+}
+#playlistId {
+    margin-left: 3px;
+    height: 25px;
+    border-radius: 2px;
+}
+#submit-button {
+    margin-left: 5px;
+    border-radius: 10px;
+    width: 55px;
+    height: 30px;
+    font-size: 15px;
+}
+#error-container {
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------
+        ^ Mobile Styling ^
+----------------------------------------------------------------------------------------------------
+*/    
+
+
+/*
+----------------------------------------------------------------------------------------------------
+        Tablet Only Styles
+----------------------------------------------------------------------------------------------------
+*/    
+@media all and (min-width: 481px) and (max-width: 850) {
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+        Tablet and Desktop Styles
+----------------------------------------------------------------------------------------------------
+*/    
+@media all and (min-width: 481px) {
+    .mobile-only {
+        display: none;
+    }
+    .desktop-tablet-only {
+        display: inline-block;
+    }
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+        Desktop Only Styles
+----------------------------------------------------------------------------------------------------
+*/    
+@media all and (min-width: 850px) {
+    /* Nav */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        /* text-align: left; */
+
+        margin-left: 20px;
+    }
+    nav li {
+        display: inline-block;
+        border-top: none;
+
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 0px;
+        margin: 15px;
+
+        border-style: solid;
+        border-width: 0.5px;
+    }
+    nav li a,
+    nav li a:visited,
+    nav li a:link {
+        display: block;
+        text-decoration: none;
+        padding: 0px 20px;
+        font-size: 30px;
+        /* color:rgb(167, 167, 167) */
+    }
+
+    h1, h2 {
+        margin-left: 25px;
+    }
+    
+    article p {
+        margin-left: 40px;
+    }
+
+    .website-image {
+        width: 400px;
+        padding-top: 15px;
+    }
+
+    /* Albums */
+    .album-single-header {
+        text-align: left;
+        margin-left: 50px;
+        font-size: 50px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    #ecAlbums {
+        margin-top: 5px;
+        grid-template-columns: 28% 28% 28%;
+        grid-row-gap: 15px;
+    }
+    .single-album-main {
+        padding: 7px;
+        border-radius: 10px;
+    }
+    .album-image {
+        border-radius: 5px;
+    }
+    .single-album h3 {
+        font-size: 40px;
+    }
+    .single-album p {
+        font-size: 20px;
+    }
+    #ecSingles {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-row-gap: 15px;
+    }
+    #ecSingles h3 {
+        font-size: 25px;
+    }
+    #ecSingles p {
+        font-size: 17px;
+    }
+    
+    /* Album Tracklist */
+    .album-tracklist-container {
+        font-size: 16px;
+        padding-top: 5px;
+        padding: 7px;
+    }
+    .album-tracklist-container h3 {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    /* Discography Page */
+    .discography-page main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .discography-page h2 {
+        margin-left: 10px;
+    }
+
+
+    /* ---------- Playlists ---------- */
+    .playlist-container {
+        border-radius: 10px;
+        padding:5px;
+
+        margin-top: 3px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+    .playlist-track {
+        border-radius: 7px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .playlist-track-name,
+    .playlist-track-duration {
+        font-size: 16px;
+    }
+
+    /* Playlist Left Side */
+    .playlist-far-left-container {
+        grid-template-columns: 50px 80%;
+    }
+    .playlist-track-image {
+        max-width: 50px;
+        border-radius: 5px;
+    }
+    .playlist-text-container {
+        margin-left: 5px;
+    }
+    .playlist-track-artists {
+        font-size: 12px;
+    }
+    
+    /* Playlist Right Side */
+    .playlist-track-duration {
+        margin-right: 30px;
+    }
+    .play-button {
+        margin-right: 10px;
+        width: 25px;
+    }
+    /* ^^^^^^^^^^ Playlists ^^^^^^^^^^ */
+
+
+    /* Photo Grid */
+    .photo-grid {
+        margin-left: 25px;
+        margin-right: 25px;
+
+        column-count: 5;
+        column-gap: 15px;
+    }
+    .photo-grid-card {
+        margin-bottom: 15px;
+        padding: 7px;
+        /* padding-bottom: 30px; */
+    }
+
+    /* Tour Photos */
+    .tour-photo {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    /* Tour Videos */
+    .tour-video-grid {
+        margin-top: 50px;
+
+        grid-template-columns: 30% 30% 30%;
+        grid-row-gap: 10px;
+    }
+    video {
+        border-radius: 7px;
+    }
+
+    /* Home Page About Section */
+    .first-about {
+        grid-template-columns: 55% 45%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .first-about article,
+    .second-about article {
+        margin-top: 50px;
+    }
+    .first-about h1,
+    .second-about h1 {
+        font-size: 40px;
+    }
+    .first-about p,
+    .second-about p {
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+    .second-about {
+        grid-template-columns: 45% 55%;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 0px;
+    }
+    .about-image {
+        border-radius: 10px;
+    }
+
+    /* Playlist Generator Form */
+    #playlist-form {
+        margin-left: 100px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+
+        border-radius: 7px;
+        border-width: 2px;
+    }
+    #playlist-form label {
+        font-size: 20px;
+    }
+    #playlistId {
+        margin-left: 3px;
+        width: 500px;
+        height: 30px;
+        border-radius: 2px;
+    }
+    #submit-button {
+        margin-left: 5px;
+        border-radius: 10px;
+        width: 55px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #error-container {
+        margin: 5px;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+/*
+----------------------------------------------------------------------------------------------------
+        ^ Desktop Only Styles ^
+----------------------------------------------------------------------------------------------------
+*/  
