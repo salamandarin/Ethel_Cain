@@ -36,3 +36,7 @@ build
 
 # Apple index
 .DS_Store
+
+# Media
+images
+videos

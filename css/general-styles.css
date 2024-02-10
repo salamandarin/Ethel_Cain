@@ -65,10 +65,10 @@ nav li a:link {
 .discography-page {
     background-image: radial-gradient(rgb(11, 0, 220), rgb(7, 0, 142), rgb(0, 0, 0));
 }
-.photos-page {
+.photos-page, .my-photos-page {
     background-color: rgb(0, 0, 0);
 }
-.tour-photos-page {
+.personal-photos-page {
     background-color: rgb(32, 32, 32);
 }
 
@@ -137,13 +137,57 @@ nav li a:link {
     display: block;
 }
 
-/* Tour Photos */
-.tour-photo {
+/* Live Show Photo Grid */
+.my-photo-grid-card {
+    background:rgb(113, 113, 113);
+}
+.my-photo {
+    max-width: 100%;
+    display: block;
+}
+
+/* Personal Media Grid */
+.personal-media {
+    display: grid;
+}
+
+/* Personal Photos */
+.photo-grid-title {
+    text-align: center;
+}
+.personal-photo {
     border-color: white;
 
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Personal Videos */
+.personal-video-grid {
+    display: grid;
+    justify-content: space-evenly;
+}
+.personal-video {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 10px;
+}
+.personal-video-grid h2 {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
 }
 
 /* Tour Videos */
@@ -152,7 +196,7 @@ nav li a:link {
     justify-content: space-evenly;
 }
 video {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* Home Page About Section */
@@ -340,8 +384,23 @@ nav li {
     padding: 2px;
 }
 
-/* Tour Photos */
-.tour-photo {
+/* Live Show Photo Grid */
+.my-photo-grid {
+    margin: 10px;
+
+    column-count: 3;
+    column-gap: 5px;
+}
+.my-photo-grid-card {
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+/* Personal Media Grid */
+
+
+/* Personal Photos */
+.personal-photo {
     width: 90%;
     border-radius: 10px;
     margin-top: 15px;
@@ -350,14 +409,17 @@ nav li {
     border-width: 1px;
 }
 
+/* Personal Videos */
+.personal-video-grid {
+    grid-template-columns: 90%;
+}
+
 /* Tour Videos */
 .tour-video-grid {
-    margin-top: 30px;
-
     grid-template-columns: 90%;
     grid-row-gap: 20px;
 }
-video {
+.tour-video {
     border-radius: 7px;
 }
 
@@ -610,24 +672,63 @@ video {
         /* padding-bottom: 30px; */
     }
 
-    /* Tour Photos */
-    .tour-photo {
-        width: 90%;
-        border-radius: 10px;
-        margin-bottom: 20px;
+    /* Live Show Photo Grid */
+    .my-photo-grid {
+        margin-left: 25px;
+        margin-right: 25px;
 
+        column-count: 4;
+        column-gap: 15px;
+    }
+    .my-photo-grid-card {
+        margin-bottom: 15px;
+        padding: 7px;
+        /* padding-bottom: 30px; */
+    }
+
+    /* Personal Media Grid */
+    .personal-media {
+        grid-template-columns: 70% 30%;
+    }
+
+    /* Personal Photos */
+    .photo-grid-title {
+        font-size: 50px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .personal-photo-grid {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        grid-row-gap: 20px;
+        justify-content: space-evenly;
+
+        align-content: start;
+        margin-bottom: 50px;
+    }
+    .personal-photo {
+        width: 100%;
+        margin: 0px;
+
+        border-radius: 10px;
         border-style: solid;
         border-width: 1px;
     }
 
+    /* Personal Videos */
+    .personal-video-grid {
+        grid-template-columns: 30%;
+        align-content: start;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
     /* Tour Videos */
     .tour-video-grid {
-        margin-top: 50px;
-
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 23% 23% 23% 23%;
         grid-row-gap: 10px;
     }
-    video {
+    .tour-video {
         border-radius: 7px;
     }
 

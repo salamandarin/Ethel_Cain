@@ -72,7 +72,7 @@ function displayPlaylistTrack(track, divID) {
 
     // -------------------- Far Left Side (Image + Name & Artists --------------------
     
-    // far right left container (for image + name & artists)
+    // far left container (for image + name & artists)
     let leftSideContainer = document.createElement("div");
     leftSideContainer.className = "playlist-far-left-container";
     div.appendChild(leftSideContainer);
