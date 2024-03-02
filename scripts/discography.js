@@ -87,7 +87,7 @@ function displayPlaylistTrack(track, divID) {
     else {
         let img = document.createElement("img");
         img.className = "playlist-track-image";
-        img.src = "images/no_image.jpg";
+        img.src = "media/images/no_image.jpg";
         leftSideContainer.appendChild(img);
     }
 
@@ -144,7 +144,7 @@ function displayPlaylistTrack(track, divID) {
         // play/pause button image
         let playButton = document.createElement("img");
         playButton.className = "play-button-image";
-        playButton.src = "images/play_button.png";
+        playButton.src = "media/images/play_button.png";
         clickable.appendChild(playButton);
 
         // preview audio
@@ -152,11 +152,11 @@ function displayPlaylistTrack(track, divID) {
         clickable.addEventListener("click", function(event) {
             event.preventDefault();
             if (audio.paused) {
-                playButton.src = "images/pause_button.png";
+                playButton.src = "media/images/pause_button.png";
                 audio.play();
             }
             else {
-                playButton.src = "images/play_button.png";
+                playButton.src = "media/images/play_button.png";
                 audio.pause();
             }
         });
