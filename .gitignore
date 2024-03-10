@@ -33,7 +33,6 @@
 
 # CMake build directory
 build
-media/
 
 # Apple index
 .DS_Store
