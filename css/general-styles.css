@@ -139,6 +139,9 @@ nav li a:link {
 .photo-grid-card {
     background:rgb(113, 113, 113);
     display: block;
+
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
     break-inside: avoid;
 }
 .photo {
@@ -149,6 +152,10 @@ nav li a:link {
 /* Live Show Photo Grid */
 .my-photo-grid-card {
     background:rgb(113, 113, 113);
+
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 .my-photo {
     max-width: 100%;
