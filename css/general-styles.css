@@ -644,7 +644,7 @@ nav li {
         padding: 5px;
         margin: 5px;
 
-        grid-template-columns: 40% 50% 10%;
+        grid-template-columns: 45% 45% 10%;
     }
     .playlist-track-name,
     .playlist-track-duration {
