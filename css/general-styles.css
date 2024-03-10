@@ -139,6 +139,7 @@ nav li a:link {
 .photo-grid-card {
     background:rgb(113, 113, 113);
     display: block;
+    break-inside: avoid;
 }
 .photo {
     max-width: 100%;
