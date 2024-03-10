@@ -234,7 +234,6 @@ function showSingleDetails(album, token, visible) {
         document.getElementById(`main-${album.id}`).appendChild(date);
 
         if (album.name == "Carpet Bed EP") {
-            console.log(album.name);
             getAlbumTracks(album, token)
         }
     }
