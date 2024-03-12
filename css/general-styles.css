@@ -20,18 +20,19 @@ a {
     color: rgb(0, 136, 255);
 }
 
+/* Website Image */
+.website-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Nav */
 nav li a,
 nav li a:visited,
 nav li a:link {
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-
-.website-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Albums */
@@ -65,7 +66,7 @@ nav li a:link {
 .discography-page {
     background-image: radial-gradient(rgb(11, 0, 220), rgb(7, 0, 142), rgb(0, 0, 0));
 }
-.photos-page, .my-photos-page {
+.photos-page {
     background-color: rgb(0, 0, 0);
 }
 .personal-photos-page {
@@ -145,19 +146,6 @@ nav li a:link {
     break-inside: avoid;
 }
 .photo {
-    max-width: 100%;
-    display: block;
-}
-
-/* Live Show Photo Grid */
-.my-photo-grid-card {
-    background:rgb(113, 113, 113);
-
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
-}
-.my-photo {
     max-width: 100%;
     display: block;
 }
@@ -263,9 +251,11 @@ article p {
     margin-left: 20px;
 }
 
+/* Website Image */
 .website-image {
-    width: 60%;
-    padding: 10px;
+    width: 70%;
+    padding-top: 12px;
+    padding-bottom: 15px;
 }
 
 /* Nav */
@@ -381,9 +371,9 @@ nav li {
 
 /* Photo Grid */
 .photo-grid {
-    margin: 10px;
-
     column-count: 3;
+
+    margin: 10px;
     column-gap: 5px;
 }
 .photo-grid-card {
@@ -393,18 +383,8 @@ nav li {
 
 /* Live Show Photo Grid */
 .my-photo-grid {
-    margin: 10px;
-
     column-count: 3;
-    column-gap: 5px;
 }
-.my-photo-grid-card {
-    margin-bottom: 5px;
-    padding: 2px;
-}
-
-/* Personal Media Grid */
-
 
 /* Personal Photos */
 .personal-photo {
@@ -526,33 +506,52 @@ nav li {
 ----------------------------------------------------------------------------------------------------
 */    
 @media all and (min-width: 481px) and (max-width: 850px) {
+
+    /* Website Image */
+    .website-image {
+        width: 60%;
+    }
+
+    /* Nav */
+    nav li {
+        margin: 5px 5px 10px 5px;
+    }
+    nav li a,
+    nav li a:visited,
+    nav li a:link {
+        padding: 0px 5px;
+        font-size: 4vw;
+    }
+
     /* Home Page About Section */
     .first-about {
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 30px;
     }
     .first-about article,
     .second-about article {
-        margin-top: 25px;
+        margin-top: 10px;
     }
     .first-about h1,
     .second-about h1 {
-        font-size: 25px;
+        font-size: 3vw;
     }
     .first-about h1 {
         margin-left: 10px;
     }
     .first-about p,
     .second-about p {
-        font-size: 14px;
+        font-size: 2.5vw;
         margin-left: 20px;
         margin-right: 15px;
-        margin-top: 5px;
+        margin-top: 1px;
     }
     .second-about {
         margin-left: 15px;
         margin-right: 10px;
         margin-top: 0px;
+        margin-bottom: 40px;
     }
     .about-image {
         border-radius: 5px;
@@ -562,6 +561,17 @@ nav li {
     #playlistId {
         width: 250px;
         border-radius: 2px;
+    }*
+
+    /* Photo Grid */
+    .photo-grid {
+        column-count: 4;
+
+        column-gap: 10px;
+    }
+    .photo-grid-card {
+        margin-bottom: 10px;
+        padding: 4px;
     }
 }
 
@@ -576,6 +586,32 @@ nav li {
     }
     .desktop-tablet-only {
         display: inline-block;
+    }
+
+    /* Nav */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+
+        /* text-align: left;
+        padding-left: 20px; */
+    }
+    nav li {
+        display: inline-block;
+        background-color: transparent;
+        border-top: none;
+        border-style: solid;
+
+        border-width: 0.5px;
+        border-radius: 5px;
+        padding: 0px;
+    }
+    nav li a,
+    nav li a:visited,
+    nav li a:link {
+        display: block;
+        text-decoration: none;
+        /* color:rgb(167, 167, 167) */
     }
 
     /* Home Page About Section */
@@ -597,34 +633,23 @@ nav li {
         display: inline-block;
     }
 
-    /* Nav */
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        /* text-align: left; */
-
-        margin-left: 20px;
+    /* Website Image */
+    .website-image {
+        width: 450px;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
+
+    /* Nav */
     nav li {
-        display: inline-block;
-        border-top: none;
-
-        background-color: transparent;
-        border-radius: 5px;
-        padding: 0px;
         margin: 15px;
-
-        border-style: solid;
-        border-width: 0.5px;
+        margin-top: 0px;
     }
     nav li a,
     nav li a:visited,
     nav li a:link {
-        display: block;
-        text-decoration: none;
         padding: 0px 20px;
         font-size: 30px;
-        /* color:rgb(167, 167, 167) */
     }
 
     h1, h2 {
@@ -633,11 +658,6 @@ nav li {
     
     article p {
         margin-left: 40px;
-    }
-
-    .website-image {
-        width: 400px;
-        padding-top: 15px;
     }
 
     /* Albums */
@@ -754,10 +774,10 @@ nav li {
 
     /* Photo Grid */
     .photo-grid {
+        column-count: 5;
+
         margin-left: 25px;
         margin-right: 25px;
-
-        column-count: 5;
         column-gap: 15px;
     }
     .photo-grid-card {
@@ -768,16 +788,7 @@ nav li {
 
     /* Live Show Photo Grid */
     .my-photo-grid {
-        margin-left: 25px;
-        margin-right: 25px;
-
         column-count: 4;
-        column-gap: 15px;
-    }
-    .my-photo-grid-card {
-        margin-bottom: 15px;
-        padding: 7px;
-        /* padding-bottom: 30px; */
     }
 
     /* Personal Media Grid */
@@ -845,6 +856,7 @@ nav li {
     .first-about {
         margin-left: 40px;
         margin-right: 40px;
+        margin-top: 0px;
     }
     .first-about article,
     .second-about article {
