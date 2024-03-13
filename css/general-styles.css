@@ -136,11 +136,11 @@ nav li a:link {
 
 /* Photo Grid */
 .photo-grid {
-    /* -webkit-column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
-    break-inside: avoid; */
+    break-inside: avoid;
 
-    /* column-fill: balance; */
+    column-fill: balance;
 }
 .photo-grid-card {
     background:rgb(113, 113, 113);
