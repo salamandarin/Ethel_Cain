@@ -33,6 +33,7 @@
 
 # CMake build directory
 build
+REMOVE_LATER
 
 # Apple index
 .DS_Store
