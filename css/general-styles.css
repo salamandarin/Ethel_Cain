@@ -735,28 +735,53 @@ nav li {
 
     /* Website Image */
     .website-image {
-        width: 450px;
+        /* width: 450px; */
+        width: 100%;
         padding-top: 12px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
 
-    /* Nav */
+    /* Nav + Header*/
+    header {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-evenly;
+
+        padding-bottom: 10px;
+        /* background-color: rgba(255, 255, 255, 0.022); */
+        /* border-bottom: 10px solid black; */
+        margin-bottom: 0px;
+    }
+    nav {
+        position: relative;
+    }
     nav ul {
-        text-align: left;
-        padding-left: 20px;
-        background-color: rgba(255, 255, 255, 0.028);
+        position: absolute;
+        bottom: 0px;
+
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
+
+        display: grid;
+        justify-content: space-evenly;
+
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 5%;
     }
-    nav li {
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+    /* nav ul :first-child {
+        margin-right: 20px;
+    } */
     nav li a,
     nav li a:visited,
     nav li a:link {
-        padding: 0px 20px;
-        font-size: 30px;
+        /* margin-left: 15px;
+        margin-right: 15px; */
+
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        font-size: 2vw;
     }
 
     /* Albums */
@@ -878,7 +903,6 @@ nav li {
     .photo-grid {
         column-count: 5;
 
-        margin-top: 25px;
         margin-left: 25px;
         margin-right: 25px;
         column-gap: 15px;
