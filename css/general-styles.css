@@ -395,12 +395,26 @@ nav li {
     column-count: 3;
 
     margin: 10px;
+
     column-gap: 5px;
 }
 .photo-grid-card {
     margin-bottom: 5px;
     padding: 2px;
 }
+
+/* Live Show Photo Grid */
+.my-photo-grid {
+    column-count: 2;
+    margin-bottom: 10px;
+
+    column-gap: 8px;
+}
+.photo-grid-card {
+    margin-bottom: 8px;
+    padding: 3.8px;
+}
+
 
 /* Personal Photos */
 .personal-photo {
@@ -871,7 +885,7 @@ nav li {
     /* Personal Photos */
     .photo-grid-title {
         font-size: 50px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 10px;
     }
     .personal-photo-grid {
